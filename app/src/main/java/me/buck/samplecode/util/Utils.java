@@ -1,4 +1,4 @@
-package me.buck.samplecode.Util;
+package me.buck.samplecode.util;
 
 import android.app.Application;
 
