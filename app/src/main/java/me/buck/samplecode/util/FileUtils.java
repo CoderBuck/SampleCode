@@ -2,10 +2,7 @@ package me.buck.samplecode.util;
 
 import android.annotation.SuppressLint;
 
-import java.util.Objects;
-
 public class FileUtils {
-
 
     /**
      * 将字节数  转换为 K M G T E 具体可自己转换

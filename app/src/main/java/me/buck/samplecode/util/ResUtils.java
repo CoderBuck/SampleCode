@@ -12,7 +12,6 @@ import android.util.DisplayMetrics;
 
 /**
  * 获取 Resources 资源
- * <p>
  * Created by Buck on 2018/4/13
  */
 public class ResUtils {
