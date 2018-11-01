@@ -25,6 +25,10 @@ public class BgHandler extends Handler {
         super(getLooper(threadName), callback);
     }
 
+    public void removeAll() {
+        removeCallbacksAndMessages(null);
+    }
+
     public void quit() {
         getLooper().quit();
     }
