@@ -17,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        startActivity(new Intent(this, SeekBarActivity.class));
+        String s = getResources().getDisplayMetrics().toString();
+        Log.e(TAG, "onCreate: getDisplayMetrics = " + s );
+
     }
 
 }
