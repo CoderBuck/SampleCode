@@ -38,7 +38,6 @@ import android.widget.FrameLayout;
 import android.widget.MediaController;
 import android.widget.TextView;
 
-import com.kedacom.dlna.R;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -531,14 +530,14 @@ public class IjkVideoView extends FrameLayout implements MediaController.MediaPl
                         int messageId;
 
                         if (framework_err == MediaPlayer.MEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK) {
-                            messageId = R.string.app_name;
+                            messageId = com.android.internal.R.string.VideoView_error_text_invalid_progressive_playback;
                         } else {
-                            messageId = R.string.app_name;
+                            messageId = com.android.internal.R.string.VideoView_error_text_unknown;
                         }
 
                         new AlertDialog.Builder(getContext())
                                 .setMessage(messageId)
-                                .setPositiveButton(R.string.app_name,
+                                .setPositiveButton(com.android.internal.R.string.VideoView_error_button,
                                         new DialogInterface.OnClickListener() {
                                             public void onClick(DialogInterface dialog, int whichButton) {
                                                 /* If we get here, there is no onError listener, so
