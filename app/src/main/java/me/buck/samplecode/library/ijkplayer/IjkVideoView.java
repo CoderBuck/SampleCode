@@ -45,6 +45,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import me.buck.samplecode.R;
 import tv.danmaku.ijk.media.player.AndroidMediaPlayer;
 import tv.danmaku.ijk.media.player.IMediaPlayer;
 import tv.danmaku.ijk.media.player.IjkMediaPlayer;
@@ -530,14 +531,14 @@ public class IjkVideoView extends FrameLayout implements MediaController.MediaPl
                         int messageId;
 
                         if (framework_err == MediaPlayer.MEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK) {
-                            messageId = com.android.internal.R.string.VideoView_error_text_invalid_progressive_playback;
+                            messageId = R.string.VideoView_error_text_invalid_progressive_playback;
                         } else {
-                            messageId = com.android.internal.R.string.VideoView_error_text_unknown;
+                            messageId = R.string.VideoView_error_text_unknown;
                         }
 
                         new AlertDialog.Builder(getContext())
                                 .setMessage(messageId)
-                                .setPositiveButton(com.android.internal.R.string.VideoView_error_button,
+                                .setPositiveButton(R.string.VideoView_error_button,
                                         new DialogInterface.OnClickListener() {
                                             public void onClick(DialogInterface dialog, int whichButton) {
                                                 /* If we get here, there is no onError listener, so
