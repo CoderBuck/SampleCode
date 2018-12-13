@@ -1,6 +1,7 @@
 package me.buck.samplecode.library.gson;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
 
 import java.lang.reflect.Type;
@@ -25,6 +26,13 @@ public class GsonUtils {
     // Type type = new TypeToken<List<String>>() {}.getType();
     public static <T> T fromJson(String json, Type typeOfT) throws JsonSyntaxException {
         return gson.fromJson(json, typeOfT);
+    }
+
+    //将 int 转成 Enum
+    private static void get() {
+        GsonBuilder builder = new GsonBuilder();
+        builder.registerTypeAdapterFactory(new Int2EnumTypeAdapterFactory());
+        builder.create();
     }
 
 }
