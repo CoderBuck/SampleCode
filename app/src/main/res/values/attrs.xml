@@ -6,9 +6,4 @@
         <attr name="ti_txt" format="reference|string"/>
     </declare-styleable>
 
-    <declare-styleable name="TxtImgView">
-        <attr name="ti_img" format="reference"/>
-        <attr name="ti_txt" format="reference|string"/>
-    </declare-styleable>
-
 </resources>
