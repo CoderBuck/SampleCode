@@ -6,11 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <me.buck.samplecode.view.TxtImgView2
-        android:id="@+id/txtImgView"
-        app:ti_img="@drawable/selector_start"
-        app:ti_txt="HHHHHHHHHAAAAAAAAAAAA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <!--<me.buck.samplecode.view.TxtImgView2-->
+        <!--android:id="@+id/txtImgView"-->
+        <!--app:ti_img="@drawable/selector_start"-->
+        <!--app:ti_txt="HHHHHHHHHAAAAAAAAAAAA"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <me.buck.samplecode.view.MyBtn
+        android:background="@drawable/selector_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
 
 </android.support.constraint.ConstraintLayout>
