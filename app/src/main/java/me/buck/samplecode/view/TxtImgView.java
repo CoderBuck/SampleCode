@@ -17,7 +17,7 @@ import me.buck.samplecode.R;
  * 图片和文字 id 必须为 img 和 txt
  * Created by gwf on 2019/1/19
  */
-public abstract class TxtImgView2 extends FrameLayout {
+public abstract class TxtImgView extends FrameLayout {
 
     protected ImageView mImageView;
     protected TextView mTextView;
@@ -25,11 +25,11 @@ public abstract class TxtImgView2 extends FrameLayout {
     protected Drawable mDrawable;
     protected String mTxt;
 
-    public TxtImgView2(@NonNull Context context) {
+    public TxtImgView(@NonNull Context context) {
         this(context,null);
     }
 
-    public TxtImgView2(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public TxtImgView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         setClickable(true);
         setFocusable(true);
@@ -37,9 +37,9 @@ public abstract class TxtImgView2 extends FrameLayout {
         mImageView = findViewById(R.id.img);
         mTextView = findViewById(R.id.txt);
 
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.TxtImgView2);
-        mTxt = typedArray.getString(R.styleable.TxtImgView2_ti_txt);
-        mDrawable = typedArray.getDrawable(R.styleable.TxtImgView2_ti_img);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.TxtImgView);
+        mTxt = typedArray.getString(R.styleable.TxtImgView_ti_txt);
+        mDrawable = typedArray.getDrawable(R.styleable.TxtImgView_ti_img);
         typedArray.recycle();
 
         mImageView.setImageDrawable(mDrawable);

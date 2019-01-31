@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="TxtImgView2">
+    <declare-styleable name="TxtImgView">
         <attr name="ti_img" format="reference"/>
         <attr name="ti_txt" format="reference|string"/>
     </declare-styleable>
